@@ -10,7 +10,7 @@
     * [数据类型](primer/chapter1.md)
     * [判断与循环](primer/chapter2.md)
     * [函数](primer/chapter3.md)
-    * [类与对象](primer/chapter4.md)
+    * [面向对象](primer/chapter4.md)
 
 * [实用技术与技巧](cook/README.md)
     * [文件与IO](cook/io.md)
