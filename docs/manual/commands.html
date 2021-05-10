@@ -695,7 +695,38 @@
                                 
                                 <h1 id="&#x5E38;&#x7528;&#x547D;&#x4EE4;&#x624B;&#x518C;">&#x5E38;&#x7528;&#x547D;&#x4EE4;&#x624B;&#x518C;</h1>
 <p>&#x4ECB;&#x7ECD;&#x5E38;&#x7528;&#x7684;python&#x547D;&#x4EE4;</p>
+<h2 id="random">random</h2>
+<p>&#x8BE6;&#x89C1;<a href="https://docs.python.org/zh-cn/3/library/random.html" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a></p>
+<pre><code># [0.0, 1.0) &#x4E4B;&#x95F4;&#x5747;&#x5300;&#x5206;&#x5E03;&#x751F;&#x6210;&#x7684;&#x968F;&#x673A;&#x6D6E;&#x70B9;&#x6570;
+random.random()
 
+# [a, b] &#x4E4B;&#x95F4;&#x5747;&#x5300;&#x5206;&#x5E03;&#x751F;&#x6210;&#x7684;&#x968F;&#x673A;&#x6D6E;&#x70B9;&#x6570;
+random.uniform(a, b)
+
+# &#x4EE5;mu&#x4E3A;&#x5747;&#x503C;&#xFF0C;sigma&#x4E3A;&#x6807;&#x51C6;&#x5DEE;&#x7684;&#x9AD8;&#x65AF;&#x5206;&#x5E03;&#x751F;&#x6210;&#x7684;&#x968F;&#x673A;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x591A;&#x7EBF;&#x7A0B;&#x614E;&#x7528;
+random.gauss(mu, sigma)
+
+# &#x751F;&#x6210;[a, b] &#x4E4B;&#x95F4;&#x7684;&#x968F;&#x673A;&#x6574;&#x6570;
+random.randint(a, b)
+
+# &#x751F;&#x6210;[0, stop] &#x4E4B;&#x95F4;&#x7684;&#x968F;&#x673A;&#x6574;&#x6570;
+random.randrange(stop)
+
+# &#x751F;&#x6210; range(start, stop[, step]) &#x4E4B;&#x95F4;&#x7684;&#x968F;&#x673A;&#x6574;&#x6570;
+random.randrange(start, stop[, step])
+
+# &#x4ECE;&#x975E;&#x7A7A;&#x5E8F;&#x5217; seq &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x5143;&#x7D20;
+random.choice(seq)
+
+# &#x4ECE;population&#x4E2D;&#x6309;&#x7167;&#x6743;&#x503C;weights&#x8FDB;&#x884C;k&#x6B21;&#x6709;&#x653E;&#x56DE;&#x968F;&#x673A;&#x62BD;&#x53D6;&#xFF08;cum_weights&#x4E3A;&#x7D2F;&#x8BA1;&#x6743;&#x503C;&#xFF0C;&#x4E0D;&#x5E38;&#x7528;&#xFF09;&#xFF0C;&#x8BE5;&#x529F;&#x80FD; 3.6 &#x7248;&#x672C;&#x540E;&#x624D;&#x6709;
+random.choices(population, weights=None, *, cum_weights=None, k=1)
+
+# &#x4ECE;population&#x4E2D;&#x8FDB;&#x884C;k&#x6B21;&#x65E0;&#x653E;&#x56DE;&#x968F;&#x673A;&#x62BD;&#x53D6;&#xFF0C;counts&#x4E3A;population&#x7684;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x9891;&#x6570;
+random.sample(population, k, *, counts=None)
+
+# &#x5C06;&#x5E8F;&#x5217; x &#x968F;&#x673A;&#x6253;&#x4E71;&#x4F4D;&#x7F6E;
+random.shuffle(x)
+</code></pre>
                                 
                                 </section>
                             
@@ -738,7 +769,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"常用命令手册","level":"1.5.2","depth":2,"next":{"title":"科学计算","level":"1.6","depth":1,"path":"sci_computation/README.md","ref":"sci_computation/README.md","articles":[{"title":"numpy","level":"1.6.1","depth":2,"path":"sci_computation/packages.md","ref":"sci_computation/packages.md","articles":[]},{"title":"pandas","level":"1.6.2","depth":2,"path":"sci_computation/packages.md","ref":"sci_computation/packages.md","articles":[]},{"title":"机器学习","level":"1.6.3","depth":2,"path":"sci_computation/packages.md","ref":"sci_computation/packages.md","articles":[]},{"title":"神经网络","level":"1.6.4","depth":2,"path":"sci_computation/packages.md","ref":"sci_computation/packages.md","articles":[]}]},"previous":{"title":"常用库手册","level":"1.5.1","depth":2,"path":"manual/packages.md","ref":"manual/packages.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python快速应用教程","language":"zh","gitbook":"*","description":"围绕python介绍各种应用，让读者能够快速上手特定项目"},"file":{"path":"manual/commands.md","mtime":"2021-05-07T08:49:00.575Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-09T07:37:30.189Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"常用命令手册","level":"1.5.2","depth":2,"next":{"title":"科学计算","level":"1.6","depth":1,"path":"sci_computation/README.md","ref":"sci_computation/README.md","articles":[{"title":"numpy","level":"1.6.1","depth":2,"path":"sci_computation/packages.md","ref":"sci_computation/packages.md","articles":[]},{"title":"pandas","level":"1.6.2","depth":2,"path":"sci_computation/packages.md","ref":"sci_computation/packages.md","articles":[]},{"title":"机器学习","level":"1.6.3","depth":2,"path":"sci_computation/packages.md","ref":"sci_computation/packages.md","articles":[]},{"title":"神经网络","level":"1.6.4","depth":2,"path":"sci_computation/packages.md","ref":"sci_computation/packages.md","articles":[]}]},"previous":{"title":"常用库手册","level":"1.5.1","depth":2,"path":"manual/packages.md","ref":"manual/packages.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python快速应用教程","language":"zh","gitbook":"*","description":"围绕python介绍各种应用，让读者能够快速上手特定项目"},"file":{"path":"manual/commands.md","mtime":"2021-05-10T06:40:27.789Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-10T09:10:22.311Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
