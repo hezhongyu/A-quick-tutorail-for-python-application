@@ -16,7 +16,7 @@
     * [文件与IO](cook/io.md)
     * [可视化](cook/visualization.md)
     * [多线程与多进程](cook/multi_processing.md)
-    * [Git与Github](cook/git.md)
+    * [Git与Github](cook/git_and_github.md)
     * [代码规范](cook/standards.md)
     * [混合编程](cook/mixture.md)
 
