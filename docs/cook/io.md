@@ -19,8 +19,21 @@
 
 
 ## 编码
-utf-8
-gbk
+- ASCII  
+    0x00~0x7f   
+- ANCI  
+    0x80~0xFFFF 比如：汉字 '中' 在中文操作系统中，使用 [0xD6,0xD0] 这两个字节存储。  
+- gbk   
+    不同的国家和地区制定了不同的标准，由此产生了 GB2312、GBK、GB18030、Big5、Shift_JIS 等各自的编码标准。这些使用多个字节来代表一个字符的各种汉字延伸编码方式，称为 ANSI 编码。在简体中文Windows操作系统中，ANSI 编码代表 GB2312编码；在繁体中文Windows操作系统中，ANSI编码代表Big5；在日文Windows操作系统中，ANSI 编码代表 JIS 编码。
+- Unicode
+    Unicode用数字0-0x10FFFF来映射这些字符，最多可以容纳1114112个字符，或者说有1114112个码位。
+- utf-8
+    UTF-8、UTF-16（UTF后的数字代表编码的最小单位，如UTF-8表示最小单位1字节（=8 bits）,所以它可以使用1、2、3、4字节等进行编码，UTF-16表示最小单位2字节，所以它可以使用2、4字节进行编码）都是Unicode的编码方案。其中UTF-8因可以兼容ASCII而被广泛使用。
+    UTF-8使用1~4字节为每个字符编码：
+    ·一个US-ASCIl字符只需1字节编码（Unicode范围由U+0000~U+007F）。
+    ·带有变音符号的拉丁文、希腊文、西里尔字母、亚美尼亚语、希伯来文、阿拉伯文、叙利亚文等字母则需要2字节编码（Unicode范围由U+0080~U+07FF）。
+    ·其他语言的字符（包括中日韩文字、东南亚文字、中东文字等）包含了大部分常用字，使用3字节编码。
+    ·其他极少使用的语言字符使用4字节编码。
 
 ## 路径
 相对路径与绝对路径
@@ -46,6 +59,11 @@ gbk
 
 读取全部内容
 
+    f = open("test.txt") 
+    data = f.read()  # 读取文件
+    print(data)
+
+
     with open("test.txt", "r") as f:  # 打开文件
         data = f.read()  # 读取文件
         print(data)
@@ -61,7 +79,6 @@ gbk
     with open("test.txt", "r") as f:
         data = f.readlines()
         print(data)
-
 
     with open("test.txt", "r") as f:
         for line in f.readlines():
