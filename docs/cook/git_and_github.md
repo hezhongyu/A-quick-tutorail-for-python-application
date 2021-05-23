@@ -10,6 +10,8 @@
 ### Git安装
 [官网下载](https://git-scm.com/downloads)
 
+- 添加邮箱密码
+
 ### Git工作流程
 Git的一般工作流程如下
 - 克隆 Git 资源作为工作目录。
@@ -65,6 +67,8 @@ Git的一般工作流程如下
 ## Github
 
 gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。
+
+- github上添加密钥
 
 ### Github准备
 
