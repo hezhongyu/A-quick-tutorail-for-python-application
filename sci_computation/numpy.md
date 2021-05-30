@@ -291,3 +291,160 @@ npy 文件用于存储重建 ndarray 所需的数据、图形、dtype 和其他�
         c = np.genfromtxt('out.txt', dtype=np.init, delimiter=',')
         print(c)
 
+
+## 访问数组元素（切片与索引）
+
+    a = np.arange(10)  
+
+    # 索引
+    b = a[5]
+
+    #  切片
+    print(a[2:7])
+    print(a[2:])
+    print(a[2:7:2])
+    print(a[2::2])
+
+    # 二维
+    b = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+    print(b)
+    print(b[0][1])  # 获取单一元素
+    print(b[1])  # 获取某一行
+    print(b[..., 1])  # 获取某一列
+    print(b[1:3])   # 获取多行
+    print(b[0:2], 0)  # 多维切片
+
+## 属性
+
+    a = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+    # 轴的数量
+    print(a.ndim)
+
+    # 元素类型
+    print(a.dtype)
+
+    # 元素个数
+    print(a.size)
+
+    # 数组维度
+    print(a.shape)
+
+## 统计
+
+    a = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+    # 最大值
+    print(a.max())
+
+    # 最小值
+    print(a.min())
+
+    # 加总
+    print(a.sum())
+
+    # 按照某一坐标进行聚合
+    print(a.max(axis=0))
+    print(a.max(axis=1))
+
+    # 最大差值
+    print(a.ptp())
+
+    # 均值
+    print(a.mean())
+    print(np.average(a))
+    wts = np.array([[9, 8, 7], [6, 5, 4], [3, 2, 1]])
+    print(np.average(a, weights=wts))
+
+    # 方差、标准差
+    print(np.var(a))
+    print(np.std(a))
+
+
+## 简单运算
+
+    a = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+    b = np.ones([3, 3])
+
+    # 加
+    print(a+b)
+
+    # 减
+    print(a-b)
+
+    # 乘
+    c = np.array([[9, 8, 7], [6, 5, 4], [3, 2, 1]])
+    print(a*c)
+
+    # 除
+    print(a/c)
+
+    # 矩阵乘法
+    print(np.dot(a, c))
+
+    # 广播机制
+    print(a+1)
+    print(a*2.5)
+    d = np.array([[1, 2, 3])
+    print(a+d)
+    print(a*d)
+
+
+## 数学运算符
+
+    # 常用运算符
+    a = np.array([[1, 2, 3], [4, -5, 6], [-7, 8, -9]])
+    b = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+    print(np.abs(a))  # 绝对值
+    print(np.square(a))  # 平方
+    print(np.sqrt(b))  # 开根号
+    print (np.power(a,2))
+    print (np.power(a,5))
+    print(np.exp(a))   # 指数
+    print(np.log(b))  # 对数，默认底数为e
+    print(np.log10(b))  # 对数，以10为底
+    print(np.sign(a))  # 符号函数
+
+    # 舍入
+    a = np.array([1.0, 5.55, 123, 0.567, 25.432])
+    print (np.around(a))  # 四舍五入
+    print (np.around(a, 1))  # 带精度的四舍五入
+    print (np.floor(a))  # 向下取整
+    print (np.ceil(a))  # 向上取整
+
+    # 三角函数
+    a = np.array([0,30,45,60,90])*np.pi/180
+    print (np.sin(a))
+    print (np.cos(a))
+    print (np.tan(a))
+
+## 转置与变形
+
+    a = np.array([[1, 2, 3], [4, 5, 6]])
+
+    # 转置
+    print(a.T)
+
+    # 变形
+    print(a.reshape(3, 2))
+    print(a.reshape(6))
+
+    # 变形为一维
+    print(a.flatten())
+
+> `flatten()`方法经常运用于神经网络的输入。
+
+## 应用
+
+    # 最大最小标准化
+    (a-a.min())/a.ptp()
+
+    # 计算平均绝对误差（MAE）
+    (1/a.size) * np.sum(sp.abs(a - b))
+
+> 在使用中一定要注意函数的调用方式是ndarray对象的方法还是numpy模块的方法。
+
+## 练习
+
+1. z-score标准化
+2. 计算均方误差（RMSE）

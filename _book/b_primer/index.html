@@ -1,0 +1,854 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>简明入门 · python快速应用教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter1.html" />
+    
+    
+    <link rel="prev" href="../a_ready/chapter2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../a_ready/">
+            
+                <a href="../a_ready/">
+            
+                    
+                    做好准备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../a_ready/chapter1.html">
+            
+                <a href="../a_ready/chapter1.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../a_ready/chapter2.html">
+            
+                <a href="../a_ready/chapter2.html">
+            
+                    
+                    hello world!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简明入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    判断与循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../cook/">
+            
+                <a href="../cook/">
+            
+                    
+                    实用技术与技巧
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../cook/io.html">
+            
+                <a href="../cook/io.html">
+            
+                    
+                    文件与IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../cook/visualization.html">
+            
+                <a href="../cook/visualization.html">
+            
+                    
+                    可视化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../cook/multi_processing.html">
+            
+                <a href="../cook/multi_processing.html">
+            
+                    
+                    多线程与多进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../cook/exception.md">
+            
+                <span>
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../cook/git_and_github.html">
+            
+                <a href="../cook/git_and_github.html">
+            
+                    
+                    Git与Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../cook/standards.html">
+            
+                <a href="../cook/standards.html">
+            
+                    
+                    代码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../cook/mixture.html">
+            
+                <a href="../cook/mixture.html">
+            
+                    
+                    混合编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../sci_computation/">
+            
+                <a href="../sci_computation/">
+            
+                    
+                    科学计算
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../sci_computation/numpy.html">
+            
+                <a href="../sci_computation/numpy.html">
+            
+                    
+                    numpy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../sci_computation/pandas.html">
+            
+                <a href="../sci_computation/pandas.html">
+            
+                    
+                    pandas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../sci_computation/stat_analysis">
+            
+                <span>
+            
+                    
+                    统计分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../sci_computation/ml.html">
+            
+                <a href="../sci_computation/ml.html">
+            
+                    
+                    机器学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../sci_computation/ann.html">
+            
+                <a href="../sci_computation/ann.html">
+            
+                    
+                    神经网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../database/">
+            
+                <a href="../database/">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../database/db_basics.html">
+            
+                <a href="../database/db_basics.html">
+            
+                    
+                    数据库基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../database/mysql.html">
+            
+                <a href="../database/mysql.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../database/sqlalchemy.html">
+            
+                <a href="../database/sqlalchemy.html">
+            
+                    
+                    sqlalchemy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../database/mongodb.html">
+            
+                <a href="../database/mongodb.html">
+            
+                    
+                    mongodb
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../spider/">
+            
+                <a href="../spider/">
+            
+                    
+                    网络爬虫
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../spider/web_basics.html">
+            
+                <a href="../spider/web_basics.html">
+            
+                    
+                    web前端基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../spider/regular_expression.html">
+            
+                <a href="../spider/regular_expression.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../spider/implementation.html">
+            
+                <a href="../spider/implementation.html">
+            
+                    
+                    爬虫实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../web/">
+            
+                <a href="../web/">
+            
+                    
+                    web开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../web/web_basics.html">
+            
+                <a href="../web/web_basics.html">
+            
+                    
+                    web基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../web/mvc.html">
+            
+                <a href="../web/mvc.html">
+            
+                    
+                    MVC架构与网络框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../web/flask.html">
+            
+                <a href="../web/flask.html">
+            
+                    
+                    flask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../web/mini_site.html">
+            
+                <a href="../web/mini_site.html">
+            
+                    
+                    开发一个迷你网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../y_cases/README.md">
+            
+                <span>
+            
+                    
+                    实战练习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../web/web_basics.html">
+            
+                <a href="../web/web_basics.html">
+            
+                    
+                    图片转字符画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../web/web_basics.html">
+            
+                <a href="../web/web_basics.html">
+            
+                    
+                    贪吃蛇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../z_manual/">
+            
+                <a href="../z_manual/">
+            
+                    
+                    常用库与命令
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../z_manual/packages.html">
+            
+                <a href="../z_manual/packages.html">
+            
+                    
+                    常用库手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../z_manual/commands.html">
+            
+                <a href="../z_manual/commands.html">
+            
+                    
+                    常用命令手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >简明入门</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B80;&#x660E;python&#x5165;&#x95E8;">&#x7B80;&#x660E;python&#x5165;&#x95E8;</h1>
+<p>&#x6B64;&#x90E8;&#x5206;&#x5305;&#x542B;&#x4E86;&#x521D;&#x6B65;&#x7684;python3&#x5165;&#x95E8;&#x3002;<br>&#x672C;&#x4EBA;&#x662F;&#x5927;&#x7EA6;&#x5728;2013&#x5E74;&#x524D;&#x540E;&#x901A;&#x8FC7;&#x7F51;&#x4E0A;&#x5B66;&#x4E60;&#x7684;python&#xFF0C;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#x627E;&#x5230;&#x7684;&#x6559;&#x7A0B;&#x975E;&#x5E38;&#x9002;&#x5408;&#x672C;&#x4EBA;&#x7684;&#x9700;&#x6C42;&#xFF1A;&#x7B80;&#x660E;&#xFF0C;&#x82E5;&#x8BFB;&#x8005;&#x4E5F;&#x9700;&#x8981;&#x4E00;&#x4EFD;&#x66F4;&#x6743;&#x5A01;&#x7684;&#x7B80;&#x660E;&#x6559;&#x7A0B;&#xFF0C;&#x4E2A;&#x4EBA;&#x63A8;&#x8350;&#x6B64;&#x6559;&#x7A0B;&#xFF1A;<a href="https://python.swaroopch.com/" target="_blank">&#x300A;A Byte of Python&#x300B;</a>&#xFF0C;&#x82E5;&#x9700;&#x8981;&#x9605;&#x8BFB;&#x4E2D;&#x6587;&#xFF0C;&#x5219;&#x53EF;&#x81EA;&#x884C;&#x5728;&#x7F51;&#x4E0A;&#x627E;&#x5BFB;&#x4E2D;&#x6587;&#x7248;&#xFF08;&#x4E2D;&#x6587;&#x540D;&#x300A;&#x7B80;&#x660E;Python&#x6559;&#x7A0B;&#x300B;&#xFF0C;&#x4F5C;&#x8005;&#x672C;&#x4EBA;&#x5F53;&#x65F6;&#x770B;&#x7684;&#x4E2D;&#x6587;python2&#x7248;&#x672C;&#x7684;&#x7F51;&#x9875;&#x5DF2;&#x7136;&#x627E;&#x4E0D;&#x5230;&#xFF09;&#x3002;&#x82E5;&#x627E;&#x4E0D;&#x5230;&#x7684;&#x8BDD;&#xFF0C;&#x4E5F;&#x53EF;&#x770B;&#x6211;&#x5199;&#x7684;&#x6559;&#x7A0B;&#x3002;&#x56FF;&#x4E8E;&#x4F5C;&#x8005;&#x6C34;&#x5E73;&#xFF0C;&#x5176;&#x4E2D;&#x6216;&#x8BB8;&#x6709;&#x4E9B;&#x8BB8;&#x9519;&#x8BEF;&#x7EB0;&#x6F0F;&#xFF0C;&#x8FD8;&#x8BF7;&#x5404;&#x4F4D;&#x8BFB;&#x8005;&#x6D77;&#x6DB5;,&#x4E0D;&#x541D;&#x8D50;&#x6559;&#x3002;</p>
+<h2 id="&#x5185;&#x5BB9;">&#x5185;&#x5BB9;</h2>
+<p>&#x6B64;&#x6559;&#x7A0B;&#x5C06;&#x4F1A;&#x548C;&#x5927;&#x90E8;&#x5206;&#x6559;&#x7A0B;&#x4E00;&#x6837;&#xFF0C;&#x4ECE;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3001;&#x5206;&#x652F;&#x7ED3;&#x6784;&#xFF08;&#x5224;&#x65AD;&#x4E0E;&#x5FAA;&#x73AF;&#xFF09;&#x3001;&#x51FD;&#x6570;&#x3001;&#x7C7B;&#x4E0E;&#x5BF9;&#x8C61;&#x51E0;&#x4E2A;&#x65B9;&#x9762;&#x8BB2;&#x8FF0;&#x5982;&#x4F55;&#x4F7F;&#x7528;python&#x8BED;&#x8A00;&#x3002;<br>&#x7279;&#x522B;&#x5730;&#xFF0C;&#x4E3A;&#x4E86;&#x8BA9;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4F7F;&#x7528;&#x8005;&#x66F4;&#x597D;&#x5730;&#x4E86;&#x89E3;python&#xFF0C;&#x4F1A;&#x5728;&#x67D0;&#x4E9B;&#x5730;&#x65B9;&#x7279;&#x522B;&#x6307;&#x51FA;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;python&#x4E0E;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x4E0E;c++&#x3001;javascript&#x3001;matlab&#x7B49;&#x3002;&#x5BF9;&#x4E8E;&#x6CA1;&#x6709;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x7ECF;&#x9A8C;&#x7684;&#x521D;&#x5B66;&#x8005;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E9B;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x8DF3;&#x8FC7;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../a_ready/chapter2.html" class="navigation navigation-prev " aria-label="Previous page: hello world!">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter1.html" class="navigation navigation-next " aria-label="Next page: 数据类型">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"简明入门","level":"1.3","depth":1,"next":{"title":"数据类型","level":"1.3.1","depth":2,"path":"b_primer/chapter1.md","ref":"b_primer/chapter1.md","articles":[]},"previous":{"title":"hello world!","level":"1.2.2","depth":2,"path":"a_ready/chapter2.md","ref":"a_ready/chapter2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python快速应用教程","language":"zh-hans","gitbook":"*","description":"围绕python介绍各种应用，让读者能够快速上手特定项目"},"file":{"path":"b_primer/README.md","mtime":"2021-05-28T12:25:15.229Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-30T05:58:32.761Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

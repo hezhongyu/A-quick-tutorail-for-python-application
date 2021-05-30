@@ -1,16 +1,17 @@
-# This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import numpy as np
+
+a = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(np.abs(a))  # 绝对值
+print(np.square(a))  # 平方
+print(np.sqrt(a))  # 开方
+print(np.power(a, 2))
+print(np.power(a, 5))
+print(np.exp(a))  # 指数
+print(np.log(a))  # 对数
+print(np.log10(a))
+print(np.sign(a))
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

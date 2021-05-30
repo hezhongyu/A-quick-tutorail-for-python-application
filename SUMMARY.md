@@ -2,16 +2,16 @@
 
 * [前言](README.md)
 
-* [做好准备](get_ready/README.md)
-    * [安装](get_ready/chapter1.md)
-    * [hello world!](get_ready/chapter2.md)
+* [做好准备](a_ready/README.md)
+    * [安装](a_ready/chapter1.md)
+    * [hello world!](a_ready/chapter2.md)
 
-* [简明入门](primer/README.md)
-    * [数据类型](primer/chapter1.md)
-    * [判断与循环](primer/chapter2.md)
-    * [函数](primer/chapter3.md)
-    * [模块](primer/chapter5.md)
-    * [面向对象](primer/chapter4.md)
+* [简明入门](b_primer/README.md)
+    * [数据类型](b_primer/chapter1.md)
+    * [判断与循环](b_primer/chapter2.md)
+    * [函数](b_primer/chapter3.md)
+    * [模块](b_primer/chapter5.md)
+    * [面向对象](b_primer/chapter4.md)
 
 * [实用技术与技巧](cook/README.md)
     * [文件与IO](cook/io.md)
@@ -21,10 +21,6 @@
     * [Git与Github](cook/git_and_github.md)
     * [代码规范](cook/standards.md)
     * [混合编程](cook/mixture.md)
-
-* [常用库与命令](manual/README.md)
-    * [常用库手册](manual/packages.md)
-    * [常用命令手册](manual/commands.md)
 
 * [科学计算](sci_computation/README.md)
     * [numpy](sci_computation/numpy.md)
@@ -50,3 +46,10 @@
     * [flask](web/flask.md)
     * [开发一个迷你网站](web/mini_site.md)
 
+* [实战练习](y_cases/README.md)
+    * [图片转字符画](web/web_basics.md)
+    * [贪吃蛇](web/web_basics.md)
+
+* [常用库与命令](z_manual/README.md)
+    * [常用库手册](z_manual/packages.md)
+    * [常用命令手册](z_manual/commands.md)
