@@ -105,7 +105,7 @@ complex128	复数，表示双 64 位浮点数（实数部分和虚数部分）
     举例
 
         x = np.empty([3,2], dtype = int) 
-        print (x)
+        print(x)
 
     > 数组元素为随机值，因为它们未初始化。
 
@@ -151,22 +151,22 @@ complex128	复数，表示双 64 位浮点数（实数部分和虚数部分）
         # 列表
         x =  [1,2,3] 
         a = np.asarray(x)  
-        print (a)
+        print(a)
 
         # 元组
-        x =  (1,2,3) 
+        x = (1,2,3) 
         a = np.asarray(x)  
-        print (a)
+        print(a)
 
         # 元组列表
-        x =  [(1,2,3),(4,5)] 
+        x = [(1,2,3),(4,5)] 
         a = np.asarray(x)  
-        print (a)
+        print(a)
 
         # 设置参数
-        x =  [1,2,3] 
+        x = [1,2,3] 
         a = np.asarray(x, dtype=float)  
-        print (a)
+        print(a)
 
 - numpy.asarray
 
@@ -203,13 +203,13 @@ complex128	复数，表示双 64 位浮点数（实数部分和虚数部分）
         print (x)
 
         x = np.arange(10,20,2)  
-        print (x)
+        print(x)
 
 
 - numpy.linspace
 
         x = np.linespace(10,20,5)  
-        print (x)
+        print(x)
 
 - 区别
 
@@ -398,8 +398,8 @@ npy 文件用于存储重建 ndarray 所需的数据、图形、dtype 和其他�
     print(np.abs(a))  # 绝对值
     print(np.square(a))  # 平方
     print(np.sqrt(b))  # 开根号
-    print (np.power(a,2))
-    print (np.power(a,5))
+    print(np.power(a,2))
+    print(np.power(a,5))
     print(np.exp(a))   # 指数
     print(np.log(b))  # 对数，默认底数为e
     print(np.log10(b))  # 对数，以10为底
@@ -407,16 +407,16 @@ npy 文件用于存储重建 ndarray 所需的数据、图形、dtype 和其他�
 
     # 舍入
     a = np.array([1.0, 5.55, 123, 0.567, 25.432])
-    print (np.around(a))  # 四舍五入
-    print (np.around(a, 1))  # 带精度的四舍五入
-    print (np.floor(a))  # 向下取整
-    print (np.ceil(a))  # 向上取整
+    print(np.around(a))  # 四舍五入
+    print(np.around(a, 1))  # 带精度的四舍五入
+    print(np.floor(a))  # 向下取整
+    print(np.ceil(a))  # 向上取整
 
     # 三角函数
     a = np.array([0,30,45,60,90])*np.pi/180
-    print (np.sin(a))
-    print (np.cos(a))
-    print (np.tan(a))
+    print(np.sin(a))
+    print(np.cos(a))
+    print(np.tan(a))
 
 ## 转置与变形
 
@@ -436,11 +436,25 @@ npy 文件用于存储重建 ndarray 所需的数据、图形、dtype 和其他�
 
 ## 应用
 
-    # 最大最小标准化
-    (a-a.min())/a.ptp()
+### 最大最小标准化
+如果我们需要将一个数组进行标准化，可以采用最大最小标准化的方式，定义如下：  
+$$
+x^* = \frac{x - min(x)}{max(x) - min(x)}
+$$
 
-    # 计算平均绝对误差（MAE）
-    (1/a.size) * np.sum(sp.abs(a - b))
+    x = np.arange(10)
+    print((x-x.min())/x.ptp())
+
+### 计算平均绝对误差（MAE）
+我们在用回归模型时，通常都要计算我们预测值与真实值之间的差距，MAE为我们的常用指标，定义如下：  
+$$
+mae = \frac{1}{n}\sum_{i=1}^n\left|\hat{y_i}-y_i\right|
+$$
+
+    y = np.arange(10)
+    y_hat = np.ones(10)
+    mae = (1/y.size) * np.sum(np.abs(y_hat-y))
+    print(mae)
 
 > 在使用中一定要注意函数的调用方式是ndarray对象的方法还是numpy模块的方法。
 

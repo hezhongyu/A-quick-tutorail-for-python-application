@@ -3,7 +3,8 @@
     "description": "围绕python介绍各种应用，让读者能够快速上手特定项目",
     "language": "zh-hans",
     "plugins":[
-        "expandable-chapters"
+        "expandable-chapters",
+        "katex"
     ]
 }
 
